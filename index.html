@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tudor Olariu - Webpage</title>
+        <link rel = "stylesheet" href = "src/style.css">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <meta charset = "UTF-8">
+    </head>
+
+    <body>
+        <!-- Loading screen -->
+        <section id = "loadingScreen">
+            <div class = "loadingFrame active">
+                <span class = "insideFrame" id = "percent">0%</span>
+            </div>
+
+            <p class = "soundOnParagraph">Recommended<br>with sound on</p>
+
+            <a id = "enterButton" href = "javascript:;">Enter website</a>
+
+            <div class = "dropDownBackground"></div>
+        </section>
+        
+        <!-- Background music -->
+        <audio loop class = "backgroundMusic" src = "media/dontStopMeNow.mp3"></audio>
+
+        <a id = "audioButton" href = "javascript:;">
+            <i id = "playPauseIcon" class = "fa-regular fa-circle-play"></i>
+        </a>
+    
+        <!-- Banner -->
+        <section id = "banner">
+            <div class = "bannerTitleRow">
+                <h1 class = "bannerWordComing">COMING</h1>
+                <h1 class = "bannerWordSoon">SOON!</h1>
+            </div>
+
+            <div class = "bannerDescription">
+                <h2>This website is under development.<br>
+                    Meanwhile, you can check out my Resume.
+                </h2>
+            </div>
+
+            <div class = "scrollIndicator">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+
+        <!-- Business card -->
+        <section id = "businessCard" class = "hidden">
+            <div class = "frontSide">
+                <div class = "content">
+                    <h3>Tudor Olariu</h3>
+                </div>
+            </div>
+
+            <div class = "backSide">
+                <div class = "content">
+                    <p>Resume</p>
+
+                    <a href = "media/resume.pdf" target = "_blank">
+                        <img src = "media/resume.jpg">
+                    </a>
+
+                    <h3>Tudor Olariu</h3>
+                    <span>Contact</span>
+
+                    <ul>
+                        <a href = "https://www.facebook.com/profile.php?id=100007237937294" target = "_blank">
+                            <li><i class = "fa-brands fa-facebook-f"></i></li></a>
+                        <a id = "instagramButton" href = "javascript:;">
+                            <li><i class = "fa-brands fa-instagram"></i></li></a>
+                        <a href = "https://www.linkedin.com/in/tudor-olariu-9133b1181/" target = "_blank">
+                            <li><i class = "fa-brands fa-linkedin-in"></i></li></a>
+                    </ul>
+
+                    <div class = "instagramDescription hidden">
+                        <span>Just kidding.<br>
+                            This ain't my cup of tea.
+                        </span>
+
+                        <div id = "instagramDescriptionCloseButton">
+                            <i class = "fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class = "bottomOfWebpage hidden"></div>
+
+        <script src = "src/script.js"></script>
+    </body>
+</html>
