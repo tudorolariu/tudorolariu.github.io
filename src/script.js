@@ -76,15 +76,15 @@ function TriggerIntro(){
     },1800);
     setTimeout(() => {
         bannerDescription.classList.add("shown");
+        audioButton.classList.add("shown");
     },2400);
     setTimeout(() => {
         scrollIndicator.classList.add("shown");
         businessCard.classList.remove("hidden");
         bottomOfWebpage.classList.remove("hidden");
     },5200);
-    setTimeout(() => {
-        audioButton.classList.add("shown");
-    },10000);
+    // setTimeout(() => {
+    // },10000);
 }
 
 function ShowInstagramDescription(){

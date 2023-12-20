@@ -18,10 +18,15 @@
     box-sizing: border-box;
 }
 
+html{
+    height: -webkit-fill-available;
+}
+
 body{
     padding: 0;
     margin: 0;
     background-color: #000;
+    height: -webkit-fill-available;
 }
 
 /* .scrollContainer{
@@ -46,8 +51,12 @@ a{
     font-size: 40px;
     width: 100%;
     overflow: hidden;
-    background-color: #1b1a31;
+    background-color: #27245a;
 }
+
+/*  1b1a31 
+    27245a
+*/
 
 #loadingScreen,
 .loadingFrame,
@@ -98,7 +107,7 @@ a{
 
 .insideFrame{
     position: absolute;
-    background-color: #1b1a31;
+    background-color: #27245a;
     height: 308px;
     width: 308px;
     border-radius: 12px;
@@ -132,7 +141,7 @@ a{
         transform: translate(-50%,-50%);
     }
     100%{
-        transform: translate(-50%, -300px);
+        transform: translate(-50%, -43vh);
     }
 }
 
@@ -141,7 +150,7 @@ a{
         transform: translate(-50%,-50%);
     }
     100%{
-        transform: translate(-50%, 220px);
+        transform: translate(-50%, 31vh);
     }
 }
 
@@ -151,7 +160,6 @@ a{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-
     display: block;
     color: #2c7a2b;
     text-align: center;
@@ -255,7 +263,7 @@ a{
             transform: translate(-50%,-50%);
         }
         100%{
-            transform: translate(-50%, -230px);
+            transform: translate(-50%, -27vh);
         }
     }
     @keyframes showEnterButton{
@@ -263,7 +271,7 @@ a{
             transform: translate(-50%,-50%);
         }
         100%{
-            transform: translate(-50%, 160px);
+            transform: translate(-50%, 25vh);
         }
     }
     @keyframes showDropDownBackground{
@@ -306,7 +314,6 @@ a{
     z-index: 2;
     position: absolute;
     top: -100vh;
-    
     text-align: center;
     font-size: 40px;
     line-height: 50px;
@@ -325,7 +332,7 @@ a{
     left: 55px;
 }
 
-/* #audioButton:before{
+/* #audioButton::before{
     content: '';
     top: 0;
     left: 0;
@@ -338,13 +345,13 @@ a{
     transition: .5s;
 }
 
-#enterButton:hover:before{
+#enterButton:hover::before{
     filter: blur(3px);
     transform: scale(1.2);
     box-shadow: 0 0 15px #2c7a2b;
-} */
+}
 
-/* #audioButton:hover{
+#audioButton:hover{
     box-shadow: 0 0 35px #2c7a2b;
 } */
 
@@ -472,7 +479,7 @@ a{
 
 .bannerDescription.shown{
     opacity: 1;
-    top: 50vh;
+    top: 48vh;
     animation: showBannerDescription 3s ease forwards;
 }
 
@@ -497,7 +504,7 @@ a{
 .scrollIndicator.shown{
     opacity: 1;
     /* transition: 2s; */
-    top: 83vh;
+    top: 80vh;
 }
 
 .scrollIndicator span{
@@ -542,6 +549,12 @@ a{
         font-weight: 200;
         text-align: center;
     }
+    .bannerTitleRow.shown{
+        top: 25vh;
+    }
+    .bannerWordSoon{
+        padding-top: 3vh !important;
+    }
     #banner h1{
         margin: 0;
         padding: 0;
@@ -551,6 +564,9 @@ a{
         width: 200px;
         margin: 0 auto;
         font-size: 17px;
+    }
+    .scrollIndicator.shown{
+        top: 77vh;
     }
     .scrollIndicator span{
         top: 80vh;
@@ -606,7 +622,7 @@ a{
     height: 100%;
     width: 100%;
     text-align: center;
-    background-image: url(../media/myPicture.jpg);
+    background-image: url(/media/myPicture.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -630,7 +646,7 @@ a{
 
 .backSide{
     transform: rotateY(180deg);
-    background: #1b1a31;
+    background: #27245a;
     color: #fff;
 }
 
@@ -812,6 +828,6 @@ a{
         right: -6px;
     }
     .bottomOfWebpage{
-        height: 73vh;
+        height: 60vh;
     }
 }
